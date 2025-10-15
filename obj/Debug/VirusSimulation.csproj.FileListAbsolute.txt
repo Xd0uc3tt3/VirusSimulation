@@ -1,0 +1,8 @@
+C:\XandersProjects\VirusSimulation\VirusSimulation\obj\Debug\VirusSimulation.csproj.AssemblyReference.cache
+C:\XandersProjects\VirusSimulation\VirusSimulation\obj\Debug\VirusSimulation.csproj.CoreCompileInputs.cache
+C:\XandersProjects\VirusSimulation\VirusSimulation\bin\Debug\VirusSimulation.exe.config
+C:\XandersProjects\VirusSimulation\VirusSimulation\bin\Debug\VirusSimulation.exe
+C:\XandersProjects\VirusSimulation\VirusSimulation\bin\Debug\VirusSimulation.pdb
+C:\XandersProjects\VirusSimulation\VirusSimulation\obj\Debug\VirusSimulation.exe
+C:\XandersProjects\VirusSimulation\VirusSimulation\obj\Debug\VirusSimulation.pdb
+C:\XandersProjects\VirusSimulation\VirusSimulation\obj\Debug\VirusSimulation.exe.config
