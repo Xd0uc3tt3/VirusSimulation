@@ -11,6 +11,10 @@ namespace VirusSimulation
         static void Main(string[] args)
         {
             PrintMap();
+
+            Console.ReadKey();
+
+            DrawVirus();
         }
 
         static void PrintMap()
@@ -38,11 +42,16 @@ namespace VirusSimulation
                 }
                 Console.WriteLine();
             }
+
         }
 
-        static void Virus()
+        static void DrawVirus()
         {
-            //
+            List<(int, int)> virus = new List<(int x, int y)>();
+
+            
+
+
         }
     }
 }
