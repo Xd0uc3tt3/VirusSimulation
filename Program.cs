@@ -8,13 +8,10 @@ namespace VirusSimulation
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            PrintMap();
-
-            Console.ReadKey();
-
-            DrawVirus();
+            
         }
 
         static void PrintMap()
@@ -47,10 +44,36 @@ namespace VirusSimulation
 
         static void DrawVirus()
         {
-            List<(int, int)> virus = new List<(int x, int y)>();
+            List<(int x, int y)> viruses = new List<(int x, int y)>
+            {
+                (0, 0),
+                (2, 3),
+                (5, 4)
+            };
 
-            
+            Random rand = new Random();
 
+            while (true)
+            {
+                Console.Clear();
+                DrawMapWithViruses(viruses);
+                Thread.Sleep(1000);
+
+                List<(int x, int y)> newViruses = new List<(int x, int y)>();
+
+                for (int i = 0; i < viruses.Count; i++)
+                {
+                    (int oldX, int oldY) = viruses[i];
+                    (int newX, int newY) = MoveVirus(oldX, oldY, rand);
+
+                    if (rand.Next(0, 100) < 10)
+                        newViruses.Add((oldX, oldY));
+
+                    viruses[i] = (newX, newY);
+                }
+
+                viruses.AddRange(newViruses);
+            }
 
         }
     }
